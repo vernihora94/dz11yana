@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.earth {
+    width: 150px;
+    display: block;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    animation: linear 5s earth infinite;
+}
+
+.moon {
+    margin-left: -75px;
+    margin-top: -75px;
+    display: block;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 70px;
+    animation: linear 6s moon infinite;
+    transform-origin: 150px 150px;
+}
+
+@keyframes moon {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(-360deg);}
+}
+
+@keyframes earth {
+    100%{transform: rotate(360deg);}
+}
